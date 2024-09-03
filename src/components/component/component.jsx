@@ -19,7 +19,7 @@ export function Component() {
           <span className="text-lg font-semibold">RailMADAD + IRCTC</span>
         </Link>
         <nav className="hidden md:flex items-center gap-4">
-          <Link href="#" className="hover:underline" prefetch={false}>
+          <Link href="/complaint" className="hover:underline" prefetch={false}>
             File Complaints
           </Link>
           <Link href="#" className="hover:underline" prefetch={false}>
@@ -28,7 +28,7 @@ export function Component() {
           <Link href="#" className="hover:underline" prefetch={false}>
             Book Tickets
           </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
+          <Link href="/feedback" className="hover:underline" prefetch={false}>
             Feedback
           </Link>
         </nav>
@@ -51,14 +51,14 @@ export function Component() {
                 </p>
                 <div className="flex flex-col gap-2 sm:flex-row">
                   <Link
-                    href="#"
+                    href="/complaint"
                     className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
                     File Complaints
                   </Link>
                   <Link
-                    href="#"
+                    href="/complaint"
                     className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-6 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
