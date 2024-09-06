@@ -14,7 +14,6 @@ import RailwayChatbot from "./Chatbot";
 export function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      
       <main className="flex-1">
         <section className="bg-muted py-8 md:py-12 lg:py-16">
           <div className="container px-4 md:px-6">
@@ -29,14 +28,14 @@ export function Component() {
                 </p>
                 <div className="flex flex-col gap-2 sm:flex-row">
                   <Link
-                    href="/complaint"
+                    href="https://railway-complaint-analyzer.vercel.app/"
                     className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
                     File Complaints
                   </Link>
                   <Link
-                    href="/complaint"
+                    href="https://railway-complaint-analyzer.vercel.app/"
                     className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-6 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
@@ -53,7 +52,7 @@ export function Component() {
             <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
               <div className="relative">
                 <Image
-                  src="/placeholder.svg"
+                  src="/ticket-booking.avif"
                   width={550}
                   height={310}
                   alt="Train Schedule"
@@ -135,7 +134,7 @@ export function Component() {
               </div>
               <div className="relative">
                 <Image
-                  src="/placeholder.svg"
+                  src="/OIP (1).jpeg"
                   width={550}
                   height={310}
                   alt="File Complaints"
@@ -157,7 +156,7 @@ export function Component() {
             <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
               <div className="relative">
                 <Image
-                  src="/placeholder.svg"
+                  src="/OIP.jpeg"
                   width={550}
                   height={310}
                   alt="Feedback"
@@ -193,7 +192,7 @@ export function Component() {
                     Provide Feedback
                   </Link>
                   <Link
-                    href="#"
+                    href="/feedback"
                     className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-6 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >

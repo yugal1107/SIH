@@ -12,7 +12,7 @@ const Navbar = () => {
         <span className="text-lg font-semibold">RailMADAD + IRCTC</span>
       </Link>
       <nav className="hidden md:flex items-center gap-4">
-        <Link href="/complaint" className="hover:underline" prefetch={false}>
+        <Link href="https://railway-complaint-analyzer.vercel.app/" className="hover:underline" prefetch={false}>
           File Complaints
         </Link>
         <Link href="#" className="hover:underline" prefetch={false}>
