@@ -9,34 +9,12 @@ import {
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
+import RailwayChatbot from "./Chatbot";
 
 export function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="bg-primary text-primary-foreground px-4 md:px-6 py-3 flex items-center justify-between">
-        <Link href="#" className="flex items-center gap-2" prefetch={false}>
-          <TrainTrackIcon className="w-6 h-6" />
-          <span className="text-lg font-semibold">RailMADAD + IRCTC</span>
-        </Link>
-        <nav className="hidden md:flex items-center gap-4">
-          <Link href="/complaint" className="hover:underline" prefetch={false}>
-            File Complaints
-          </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Check Schedules
-          </Link>
-          <Link href="#" className="hover:underline" prefetch={false}>
-            Book Tickets
-          </Link>
-          <Link href="/feedback" className="hover:underline" prefetch={false}>
-            Feedback
-          </Link>
-        </nav>
-        <Button variant="ghost" size="icon" className="md:hidden">
-          <MenuIcon className="w-6 h-6" />
-          <span className="sr-only">Toggle menu</span>
-        </Button>
-      </header>
+      
       <main className="flex-1">
         <section className="bg-muted py-8 md:py-12 lg:py-16">
           <div className="container px-4 md:px-6">
@@ -66,67 +44,7 @@ export function Component() {
                   </Link>
                 </div>
               </div>
-              <div className="relative">
-                <Card className="w-full max-w-md mx-auto">
-                  <CardHeader className="flex flex-row items-center">
-                    <div className="flex items-center space-x-4">
-                      <Avatar>
-                        <AvatarImage src="/placeholder-user.jpg" alt="Image" />
-                        <AvatarFallback>RA</AvatarFallback>
-                      </Avatar>
-                      <div>
-                        <p className="text-sm font-medium leading-none">
-                          Rail Assistant
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          railassistant@example.com
-                        </p>
-                      </div>
-                    </div>
-                    <Button
-                      size="icon"
-                      variant="outline"
-                      className="ml-auto rounded-full"
-                    >
-                      <PlusIcon className="w-4 h-4" />
-                      <span className="sr-only">New message</span>
-                    </Button>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-4">
-                      <div className="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm ml-auto bg-primary text-primary-foreground">
-                        Hi, how can I assist you today?
-                      </div>
-                      <div className="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm bg-muted">
-                        I need to file a complaint about a recent train delay.
-                      </div>
-                      <div className="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm ml-auto bg-primary text-primary-foreground">
-                        Okay, let&aposs get started. Can you please provide the
-                        details of your journey?
-                      </div>
-                      <div className="flex w-max max-w-[75%] flex-col gap-2 rounded-lg px-3 py-2 text-sm bg-muted">
-                        Sure, I was traveling from Delhi to Mumbai on train
-                        number 12345 on June 15th. The train was delayed by over
-                        2 hours.
-                      </div>
-                    </div>
-                  </CardContent>
-                  <CardFooter>
-                    <form className="flex items-center w-full space-x-2">
-                      <Input
-                        id="message"
-                        placeholder="Type your message..."
-                        className="flex-1"
-                        autoComplete="off"
-                      />
-                      <Button type="submit" size="icon">
-                        <SendIcon className="w-4 h-4" />
-                        <span className="sr-only">Send</span>
-                      </Button>
-                    </form>
-                  </CardFooter>
-                </Card>
-              </div>
+              <RailwayChatbot />
             </div>
           </div>
         </section>
@@ -268,7 +186,7 @@ export function Component() {
                 </div>
                 <div className="flex flex-col gap-2 sm:flex-row">
                   <Link
-                    href="#"
+                    href="/feedback"
                     className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                     prefetch={false}
                   >
