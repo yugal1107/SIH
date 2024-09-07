@@ -63,7 +63,7 @@ export function Component() {
                   className="absolute inset-0 z-10 flex items-center justify-center text-2xl font-bold text-primary-foreground transition-colors hover:bg-black/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   prefetch={false}
                 >
-                  Check Train Schedules
+                  
                 </Link>
               </div>
               <div className="flex flex-col justify-center space-y-4">
@@ -145,7 +145,7 @@ export function Component() {
                   className="absolute inset-0 z-10 flex items-center justify-center text-2xl font-bold text-primary-foreground transition-colors hover:bg-black/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   prefetch={false}
                 >
-                  File Complaints
+                  
                 </Link>
               </div>
             </div>
@@ -167,7 +167,7 @@ export function Component() {
                   className="absolute inset-0 z-10 flex items-center justify-center text-2xl font-bold text-primary-foreground transition-colors hover:bg-black/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   prefetch={false}
                 >
-                  Provide Feedback
+                  
                 </Link>
               </div>
               <div className="flex flex-col justify-center space-y-4">
