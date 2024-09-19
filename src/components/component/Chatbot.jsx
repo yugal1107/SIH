@@ -93,9 +93,9 @@ function RailwayChatbot() {
               <AvatarFallback>RA</AvatarFallback>
             </Avatar>
             <div>
-              <p className="text-sm font-medium leading-none">Rail Assistant</p>
+              <p className="text-sm font-medium leading-none">Gantavya</p>
               <p className="text-sm text-muted-foreground">
-                railassistant@example.com
+                gantavya@help.com
               </p>
             </div>
           </div>

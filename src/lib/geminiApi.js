@@ -1,7 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
-console.log(API_KEY);   
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 export async function analyzeRailwayWithGemini(imageFile) {

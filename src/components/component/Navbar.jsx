@@ -7,7 +7,7 @@ import { MenuIcon, TrainTrackIcon } from "lucide-react";
 const Navbar = () => {
   return (
     <header className="bg-primary text-primary-foreground px-4 md:px-6 py-3 flex items-center justify-between">
-      <Link href="#" className="flex items-center gap-2" prefetch={false}>
+      <Link href="/" className="flex items-center gap-2" prefetch={false}>
         <TrainTrackIcon className="w-6 h-6" />
         <span className="text-lg font-semibold">RailMADAD + IRCTC</span>
       </Link>
