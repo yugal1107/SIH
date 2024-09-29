@@ -84,7 +84,7 @@ function RailwayDetails() {
       <div className="mt-4">
         <h3 className="text-xl font-semibold mb-2">Complaint ID</h3>
         <div className="flex items-center">
-          <span className="text-gray-700 mr-2">{id}</span>
+          <span className="text-gray-700 mr-2">{"#12345"}</span>
           <button
             onClick={handleCopyId}
             className="bg-secondary-foreground text-background hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-md focus:outline-none focus:shadow-outline"
